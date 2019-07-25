@@ -22,30 +22,30 @@ app.config['SECRET_KEY'] = '5791628bb0b13ce0c676dfde280ba245'
 
 @app.route("/")
 def home():
-    return render_template('index.html') #title='index')
+    return render_template('index.html',title='index')
 
 @app.route("/about")
 def about():
-    return render_template('about.html') #title='About')
+    return render_template('about.html',title='About')
 
 
 @app.route("/news")
 def news():
-    return render_template('blog.html')#title='news')
+    return render_template('news.html',title='news')
 
 @app.route("/services")
 def entertainment():
-    return render_template('services.html') # title='services')
+    return render_template('entertainment.html',title='entertainment')
 
 
 @app.route("/portfolio")
 def sports():
-    return render_template('portfolio.html') #title='portfolio')
+    return render_template('sports.html', title='sports')
 
 
 @app.route("/contact")
 def contact():
-   return render_template('contact.html') # title='contact')
+   return render_template('contact.html',title='contact')
 
 
 if __name__ == '__main__':

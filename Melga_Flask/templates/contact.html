@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="css/main.css">
     <title>MELGA</title>
     <style>
-    .jumbotron {height: auto;padding-top: 180px;}
+    .jumbotron {height: auto;padding-top: 200px;}
     .jumbotron .inner-content h1 span {display: inline-block;padding: 0 10px;}
-    .jumbotron .inner-content h1 {font-size: 34px;letter-spacing: -2px;}
+    .jumbotron .inner-content h1 {font-size: 34px;letter-spacing: -2px;}      
     </style>
   </head>
   <body>
@@ -26,31 +26,30 @@
 <!-- Nav -->
 <nav id="global-nav" class="navbar navbar-custom navbar-dark fixed-top navbar-expand-md" role="navigation">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
-              <img src="" class="d-inline-block align-top" alt="">
+          <a class="navbar-brand" href="blog_single.html">
           </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse">
+                <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-md-auto">
-                  </ul>
-            </div>
-                    <li class="nav-item"><img src="images/melga.png" style="margin-left:-300px; width:200px; height:150px;"></li>
+                      <ul>
+                    <li class="nav-item"><img src="../static/image/melga.png" style="margin-left:-300px; width:200px; height:150px;"></li>
                     </ul>
+                    </div>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-md-auto">
-                    <li class="nav-item"><a class="page-scroll nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="page-scroll nav-link" href="index.html">Home<span class="sr-only">(current)</span></a></li>
                     <li class="hidden">|</li>
-                    <li class="nav-item"><a class="page-scroll nav-link active" href="about.html">About<span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="page-scroll nav-link" href="about.html">About </a></li>
                     <li class="hidden">|</li>
-                    <li class="nav-item"><a class="page-scroll nav-link" href="services.html">Entertainmet </a></li>
+                    <li class="nav-item"><a class="page-scroll nav-link" href="services.html">Entertainment </a></li>
                     <li class="hidden">|</li>
-                    <li class="nav-item"><a class="page-scroll nav-link" target="" href="portfolio.html">Sports</a></li>
+                    <li class="nav-item"><a class="page-scroll nav-link" href="portfolio.html">Sports</a></li>
                     <li class="hidden">|</li>
                     <li class="nav-item"><a class="page-scroll nav-link" href="blog.html">News</a></li>
                     <li class="hidden">|</li>
-                    <li class="nav-item"><a class="page-scroll nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="page-scroll nav-link active" href="contact.html">contact<span class="sr-only">(current)</span></a></li>
                 </ul>
             </div>
         </div>
@@ -62,10 +61,11 @@
  <!-- Gradient -->
  <div class="gradient"></div>
   <div class="container">
-    <div class="inner-content col1">
+    <div class="inner-content">
         <h1>
-          <span>welcome to</span>
-          <span>102.6 FM!</span>
+          <span>Hello !!</span>
+          <span>Welcome to</span>
+          <span>102.6 FM !</span>
         </h1>
         <p><a class="btn btn-outline-primary btn-lg" href="about.html" role="button">know more</a></p>
     </div>
@@ -74,32 +74,59 @@
 </div>
 <!-- /jumbotron -->
 
-<!-- About Section Start -->
-<div id="about-us">
-    <div class="container">
-       <h3>About us</h3>
-        <div class="row" style="margin-right: 0; margin-left: 0;">
-            <div data-aos="fade-up" data-aos-duration="800">
-             <img src="images/list.jpeg" alt="about-bg" class="thumbnail image">
-              <p>Welcome to MELGA Radio. We transmit on the frequency of 102.6 fm. </p>
-             <p>We are always at your service from 8:00 am to 12:00pm.</p>
-             <p>We can interest you amazing news on sports and entertainments and what have u </p>
-            </div>
-         </div>
+<!-- Contact Section Start -->
+<section id="contact">
+<div class="container">
+  <h3 data-aos="fade-up" data-aos-duration="600">Reach us for more information or ideas :</h3>
+  <div class="row" data-aos="fade-up" data-aos-duration="800">
+    <div class="col-xs-12 col-md-6">
+     <form>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Your Name" type="text" required>
+        </div>
+        <div class="col-sm-12 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Your Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Your Message" rows="7"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-left" type="submit">Submit</button>
+        </div>
+      </div>
+      </form>
     </div>
+    <div class="col-xs-12 col-md-6">
+      <h3>MELGA Radio</h3>
+      <address>
+      <p><span><i class="fa fa-phone-square" aria-hidden="true"></i></span> 0558378930</p>
+      <p><span><i class="fa fa-envelope-open" aria-hidden="true"></i></span> info@MELGA.com</p>
+      <p><span><i class="fa fa-globe" aria-hidden="true"></i></span> ww.MELGA Radio.com</p>
+      </address>
+    </div>
+  </div>
 </div>
-<!-- About Section End -->
+</section>
 
 <!-- Footer -->
 <footer class="page-footer font-small indigo">
   <div class="gradient"></div>
     <!-- Footer Links -->
-    <div class="container"></div>
-       
+    <div class="container">
+     
+      <!-- Grid row-->
+      <div class="row Subscribe">
+        <!-- Grid column -->
+        <div class="col-lg-6 col-sm-6 col1" data-aos="fade-right" data-aos-duration="800">
+        <div class="heading">
+            
+            
       <!-- Grid row-->
       <div class="row text-center d-flex justify-content-center pt-5">
         <!-- Grid column -->
         
+    
     <!-- Copyright -->
     <div class="footer-copyright text-center">
     <p>(C) 2019. All rights, <span><a href="https://www.template.net/editable/websites/html5">MELGA Radio</a></span> . designed by
